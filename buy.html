@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secure Checkout — Midas Manifestation</title>
+  <script src="/js/affiliate-config.js"></script>
+  <script>
+    window.location.replace(window.midasCheckoutUrl());
+  </script>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 80px 20px; color: #333;">
+  <p>Redirecting to secure Digistore24 checkout…</p>
+  <p><a id="checkout-fallback" href="https://www.digistore24.com/product/439776">Click here if you are not redirected</a></p>
+  <script>
+    document.getElementById('checkout-fallback').href = window.midasCheckoutUrl();
+  </script>
+</body>
+</html>

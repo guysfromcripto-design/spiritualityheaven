@@ -1,0 +1,44 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/presentation2/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/presentation2/text.php",
+      "destination": "/presentation2/text.php/index.html"
+    },
+    {
+      "source": "/presentation2/text.php/",
+      "destination": "/presentation2/text.php/index.html"
+    },
+    {
+      "source": "/discount2/index.php/",
+      "destination": "/discount2/index.php/index.html"
+    },
+    {
+      "source": "/presentation2/buy.php",
+      "destination": "/buy.html"
+    },
+    {
+      "source": "/presentation2/buy2.php",
+      "destination": "/buy.html"
+    },
+    {
+      "source": "/buy.php",
+      "destination": "/buy.html"
+    },
+    {
+      "source": "/buy2.php",
+      "destination": "/buy.html"
+    },
+    {
+      "source": "/discount2/index.php",
+      "destination": "/discount2/index.php/index.html"
+    }
+  ]
+}
