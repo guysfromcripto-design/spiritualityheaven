@@ -1,0 +1,1344 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+
+
+	<title>Wait! I want you to have something...</title>
+	<base href="/discount2/">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/members/public/business/1603277464-favicon.png">  
+
+<!-- yt CSS -->
+
+	<link rel="stylesheet" href="./css/floating.css">
+
+	<style>
+
+	.video-overlay{
+
+		background:url(xxx);
+
+		background-size:100% 100%;
+
+		display:block;
+
+	}
+
+	.checkbox_addon_scale{
+
+
+
+			 -ms-transform: scale(2);  -moz-transform: scale(2);  -webkit-transform: scale(2);  -o-transform: scale(2);  transform: scale(2);  padding: 5px;
+
+
+
+		}
+
+	</style>
+
+<!-- end of yt-->
+
+
+
+<style>
+
+.bg{
+
+    background: #17528a!important;
+
+}
+
+.container{
+
+	background:#fff;
+
+	padding-left:5%;
+
+	padding-right:5%;
+
+	padding-bottom:5%;
+
+	max-width:960px;
+
+}
+
+
+
+.warning{
+
+	background:yellow;
+
+	font-weight:bold;
+
+	text-align:center;
+
+}
+
+body{
+
+	font-size:large;
+
+	background:#fff;
+
+	
+
+	 background-image: url('./img/bg.png');
+
+	background-size:cover;
+
+	border-top: solid 2px #d4d4d4;
+
+	background-attachment:fixed;
+
+}
+
+
+
+.hr-style-9 {
+
+    display: block;
+
+    height: 40px;
+
+    margin: 30px 0;
+
+    position: relative;
+
+}
+
+.hr-style-9 .hr-1, .hr-style-9 .hr-2 {
+
+    height: 40px;
+
+    width: 50%;
+
+    background-image: url(./img/style-9.png);
+
+    background-repeat: no-repeat;
+
+}
+
+.hr-style-9 .hr-1 {
+
+    background-position: left center;
+
+    float: left;
+
+}
+
+.hr-style-9 .hr-2 {
+
+    background-position: right center;
+
+    float: right;
+
+}
+
+.addtocart{
+
+	text-decoration: none;
+
+    width: 100%;
+
+    padding: 30px 0;
+
+    border-color: rgba(0, 0, 0, 0);
+
+    border-width: 1px;
+
+    -moz-border-radius: 6px;
+
+    -webkit-border-radius: 6px;
+
+    border-radius: 6px;
+
+    background: #2f9500;
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f9500), color-stop(100%, #2f9500));
+
+
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2f9500, endColorstr=#2f9500, GradientType=0);
+
+    box-shadow: none;
+
+    line-height: 1;
+
+    text-align: center;
+
+    position: relative !important;
+
+    display: inline-block !important;
+
+    border-style: solid;
+
+    font-family: "Open Sans", sans-serif;
+
+	    font-size: 3.3vh;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+	margin-bottom:4%;
+
+	padding-left: 5px;
+
+    padding-right: 5px;
+
+}
+
+.addtocart:hover{
+
+	   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3f9e14), color-stop(100%, #54a92c));
+
+	   text-decoration:none;
+
+}
+
+p{
+
+	    margin: 0 0 16px;
+
+}
+
+
+
+img.img-right {
+
+	float:right;
+
+    margin: 0 0 15px 0;
+
+    width: 25%;
+
+}
+
+img.img-left {
+
+    float: left;
+
+    margin: 0 0 15px 0;
+
+    width: 25%;
+
+}
+
+/*MODAL */
+
+#discount1, #discount2{
+
+    background: #3333337a;
+
+    top: 0;
+
+    position: fixed;
+
+    width: 100%;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+	overflow:auto;
+
+	transition: all 5s ease-in-out;
+
+	display:none;
+
+	z-index:2;
+
+}
+
+
+
+#discount2 .popaddbody{
+
+    background-color: black;
+
+    border-style: dashed;
+
+    border-color: red;
+
+    border-width: 7px;
+
+    color: #fff;
+
+    margin-top: 0;
+
+
+
+}
+
+@keyframes popup {
+
+  0%{
+
+    transform: scale(1);
+
+  }
+
+  40%{
+
+    transform: scale(1.2);
+
+  }
+
+  100%{
+
+    transform: scale(1);
+
+  }
+
+}
+
+@keyframes popup2 {
+
+  0%{
+
+	transform:rotate(180deg);
+
+  }
+
+  50%{
+
+	  transform: scale(1.5);
+
+  }
+
+  100%{
+
+	transform:rotate(360deg);
+
+  }
+
+}
+
+
+
+#discount1:target{
+
+	display:block;
+
+	animation: popup 0.4s;
+
+}
+
+#discount2:target{
+
+	display:block;
+
+	animation: popup2 0.5s;
+
+}
+
+
+
+.popaddbody{
+
+	margin-top:5%;
+
+     -webkit-transform: translate(0,2%);
+
+	background:#fff;
+
+
+
+    padding: 1.5rem;
+
+    padding-left: 3.5rem;
+
+    padding-right: 3.5rem;
+
+	border-radius:5px;
+
+	height:100%;
+
+	width:80%;
+
+		max-width:800px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* END OF MODALS */
+
+
+
+
+
+/* BULLETS */
+
+.reasons{
+
+	list-style: none;
+
+    padding: 0px;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+}
+
+.reasons li{
+
+	    background-image: url(./img/circlecheckmark.png);
+
+    background-repeat: no-repeat;
+
+    background-position: 0px 0px;
+
+    padding-left: 50px;
+
+    padding-bottom: 10px;
+
+}
+
+.reason-img img{
+
+	padding: 10px;
+
+    border: 2px solid rgba(0,0,0,0.55);
+
+    box-shadow: 0 4px 3px rgba(0,0,0,0.15), 0 0 2px rgba(0,0,0,0.15);
+
+}
+
+/* END OF BULELTS */
+
+
+
+.formtable {
+
+	margin:10px;
+
+	width:450px;
+
+}
+
+
+
+.formtable input {
+
+	padding:10px;
+
+	width:100%;
+
+}
+
+
+
+.footerlink a {
+
+	color:#FFF;
+
+	font-size:15px;
+
+}
+
+
+
+.footer {
+
+	width:950px;
+
+	font-size:16px;
+
+}
+
+
+
+.colleft {
+
+	float:left;
+
+	width:50%;
+
+	text-align:left;
+
+	font-size:15px;
+
+	color:#FFF;
+
+}
+
+
+
+.colright {
+
+	float:right;
+
+	width:50%;
+
+	text-align:right;
+
+	font-size:15px;
+
+	color:#FFF;
+
+}
+
+
+
+h2 {
+
+font-size: 46px;text-shadow:1px 1px 0px #000;text-shadow:1px 1px 0px rgba(0,0,0,0.5);text-align:center;line-height: 1.1em;font-family:'Oswald', sans-serif; text-transform:uppercase;
+
+}
+
+.imgdollar {
+
+text-align:center;
+
+}
+
+
+
+.form {
+
+	margin-top:30px;
+
+}
+
+/*---------------------------------------------------
+
+FORM CSS
+
+----------------------------------------------------*/
+.af-element.buttonContainer input {
+    width: 100%;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #309601;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px){
+
+img.img-left, img.img-right,.formtable,.colleft,.colright, .imgdollar img {
+
+    width: 100%;
+
+}
+
+.footer {
+
+    width: 80%;
+
+}
+
+.colleft, .colright {
+
+	text-align:center;
+
+}
+
+h2 {
+
+	font-size:30px;
+
+}
+
+}
+
+</style>
+
+<!--RR -->
+
+<style>
+
+.pbox{
+
+	/* padding:20px;
+
+	background-color:#d0d0d0;
+
+	border-radius:10px;
+
+	*/
+
+}
+
+.scroll{
+
+	max-height:150px;
+
+	overflow-y: scroll;
+
+	max-width:800px;
+
+	padding: 0 2%;
+
+	box-shadow: 0px 0px 0px 1px #b5b5b5;
+
+	font-size:10pt;
+
+	line-height: 1.5em;
+
+}
+
+.spart{
+
+	text-align: left;
+
+    background-color: #fff;
+
+    margin: 30px auto 0;
+
+    padding: 0 10%;
+
+	font-family: Helvetica;
+
+    font-size: 11pt;
+
+}
+
+.spart p{
+
+	padding:unset;
+
+}
+
+</style>
+
+<style>
+div#popupAccess {
+  background-image: url("./img/overlay1.png");
+  background-repeat: repeat;
+  background-color: #5086a770 !important;
+}
+
+/* fp MODAL  */
+.modal-fpmdlframe {
+  background-color: #fff;
+  max-width: 725px;
+  margin:12% auto 9%;
+  border: 9px solid;
+  box-shadow: 0 0 0px 10px #fff6;
+  border-radius: 6px;
+  padding:0;
+}
+
+.modal-dialog {
+	width:800px;
+    max-width: 800px;
+    margin: 300px auto 0px auto;
+}
+
+a.btn-mdl.btn-rdMore {
+  width: 95%;
+  display: inline-block;
+  text-align: center;
+  margin: -6px 2.5% 7px;
+  border: 2px solid #fff;
+  font-family: Open Sans Condensed;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000;
+  border-radius: 0;
+  padding: 7px 0 7px;
+}
+a.btn-mdl.btn-rdMore{
+  background-color: #FFC800;
+  box-shadow: 0 0 0 1px #FFC800;
+}
+a.btn-mdl.btn-rdMore:hover {
+  background-color: #c70000;
+  box-shadow: 0 0 0 1px #c70000;
+  color: #fff;
+}
+a.btn-mdl.btn-explain {
+  background-color: #aaa;
+  box-shadow: 0 0 0 1px #aaa;
+  font-family: Open Sans Condensed;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  width: 95%;
+  display: inline-block;
+  padding: 8px;
+  margin: 0 2.5%;
+  text-align: center;
+  border: 2px solid;
+}
+a.btn-mdl.btn-explain {
+  background-color: #666 !important;
+  box-shadow: 0 0 0 1px #666;
+  color: #fff;
+}
+a.btn-mdl.btn-explain:hover {
+  background-color: #444 !important;
+  box-shadow: 0 0 0 1px #444;
+  color: #fff;
+}
+
+.font-alt {
+    font-family: Open Sans;
+}
+img.forNdAfter {
+    float: left;
+    display: inline-block;
+    margin: 0 20px 20px 10px;
+    max-width: 275px;
+}
+h3.mdlHd {
+    font-family: Open Sans Condensed;
+    font-style: oblique;
+    font-size: 25px;
+    line-height: 1;
+    max-width: 92%;
+    margin-top: 16px;
+    margin-bottom: 22px;
+    font-weight: 700 !important;
+}
+.mdlh1 {
+	text-align: center;
+    background: #000;
+    margin: 0px;
+    margin-bottom: 10px;
+    color: #FFF;
+    padding: 10px;
+}
+ul.mdlitems {
+    display: block;
+    list-style: none;
+    margin: -10px 20px 0 0;
+}
+.mdlitems li {
+    line-height: 21px;
+    margin-top: 9px;
+}
+.mdlitems img {
+    float: left;
+    margin: -3px 6px 2px 0px;
+}
+.smltick {
+    max-width: 38px;
+}
+p.mdlBold {
+    font-weight: 800;
+    line-height: 1;
+    font-size: 18px;
+    padding: 18px 6% 10px;
+}
+.font-alt.mt-30 {
+    margin: 20px 0;
+}
+
+.mdl-close button.close {
+    background-color: #fff;
+    color: #555;
+    padding: 10px 14px;
+    border-radius: 30px;
+    margin: -40px -35px 0;
+    cursor: pointer !important;
+}
+.modal.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    -webkit-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+}
+
+
+@media only screen and (max-width: 568px) {
+	.modal-fpmdlframe {
+	  margin: 12% 6% 9% 6%;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+
+	.modal-dialog {
+		max-width: 500px;
+		margin: 1.75rem auto;
+	}
+}
+
+
+</style>
+
+<script type="application/javascript">
+
+   function clickmate(){
+
+	   setTimeout('clickmate2()',599.99990463257);
+
+ }
+
+   function clickmate2(){
+
+	    document.getElementById("plswait").style.display = "none";
+
+	   document.getElementById("content").style.display = "block";
+
+}
+
+</script>
+
+
+
+</head>
+
+<body onload="clickmate()">
+
+
+
+
+
+<div class="row">
+
+	<div class="container">
+
+
+
+	<br>
+
+	<h2 style="text-align:center;"><b>Wait! I want you to have something...</b></h2>
+
+	<br>
+
+	<p class="imgdollar" style="text-align:center;"><img src="./img/dollarimg.png"/></p>
+
+	<h3 style="text-align:center;">Take <u>$10 OFF</u> Now.</h3>
+
+	<p></p>
+
+<h2 style="">
+
+	The Complete Midas Manifestation System PLUS
+
+<b><u>FREE</u></b> Bonus Audio Tracks!
+
+</h2>
+
+
+
+<p id="plswait" style="text-align:center;"></p>
+
+
+
+<div id="content" style="display:none;"><!--content-->
+
+<br>
+
+<!--ADD TO CART-->
+
+<center>
+
+
+
+<div class="spart ">
+
+
+
+<p><img style="width:100%;" src="./img/midasmain.png"/></p>
+
+
+
+</div>
+
+<a href="#">Yes! I'm ready to get started manifesting wealth in my life!</a>
+
+
+
+<p>&nbsp;</p>
+
+
+
+<h3 style="color:#F00;"><b>Just <strike>$37</strike> $27!!</b></h3>
+
+
+
+<p>&nbsp;</p>
+
+
+
+<script>
+
+var day = new Date();
+
+
+
+var nextDay = new Date(day);
+
+nextDay.setDate(day.getDate() + 1);
+
+var month;
+
+switch(nextDay.getMonth()){
+
+	case 0:	month = "January"; break;
+
+	case 1:	month = "February"; break;
+
+	case 2:	month = "March"; break;
+
+	case 3:	month = "April"; break;
+
+	case 4:	month = "May"; break;
+
+	case 5:	month = "June"; break;
+
+	case 6:	month = "July"; break;
+
+	case 7:	month = "August"; break;
+
+	case 8:	month = "September"; break;
+
+	case 9:	month = "October"; break;
+
+	case 10:	month = "November"; break;
+
+	case 11:	month = "December"; break;
+
+}
+
+
+
+var fulldate = month + " " + nextDay.getDate() + ", " + nextDay.getFullYear();
+
+
+
+</script>
+
+
+
+<h3><span style="background:#FF0;">Discount Ends on <script>document.write(fulldate);</script></span></h3>
+
+<p>&nbsp;</p>
+
+
+<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl">
+<div class="form">
+
+	<div class="formtable">
+
+			<div style="display: none;">
+			<input type="hidden" name="meta_web_form_id" value="712047315" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="awlist5831047" />
+            <input type="hidden" name="redirect" value="https://MidasManifestation.com/discount2/buy3.php" id="redirect_ecf68d4e7b7aaa11e9ca6aa84a4ee2b3" />
+            <input type="hidden" name="meta_redirect_onlist" value="https://MidasManifestation.com/discount2/buy3.php" />
+            <input type="hidden" name="meta_adtracking" value="test_form" />
+            <input type="hidden" name="meta_message" value="1" />
+            <input type="hidden" name="meta_required" value="name,email" />
+            <input type="hidden" name="meta_tooltip" value="name||Your First Name,,email||Enter Your Email" />
+			</div>
+			
+			<input id="awf_field-117289576" type="text" name="name" class="text" value="Your First Name"  onfocus=" if (this.value == 'Your First Name') { this.value = ''; }" onblur="if (this.value == '') { this.value='Your First Name';} " tabindex="500" />
+	</div>
+
+	<div class="formtable">
+
+	
+<input class="text" id="awf_field-117289577" type="text" name="email" value="Enter Your Email" tabindex="501" onfocus=" if (this.value == 'Enter Your Email') { this.value = ''; }" onblur="if (this.value == '') { this.value='Enter Your Email';} " />
+
+	</div>
+		<div class="formtable">
+	<input type="text" id="awf_field-117289578" class="text" name="custom TAG_ID" value=""  onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" style="display:none;"/>
+</div>
+<input type="hidden" id="awf_field-117289579" class="text" name="custom country" value="" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} tabindex="503" />
+</div>
+
+<div class="af-element buttonContainer">
+<input name="submit" class="submit" type="submit" value="Claim My Discount" tabindex="502" />
+</div>
+</form>
+</center>
+
+<!--END OF ADD TO CART -->
+
+
+
+<hr>
+
+
+
+<!--MONEY MAKING MOGULS -->
+
+<div class="row" id="spartan">
+
+
+
+<div class="container pbox" style="max-width:800px;">
+
+<center>
+
+<!--<img src="./img/guarantee.png" style="max-width:250px;"/>-->
+<img src="img/mbg-gold.jpeg" alt="Add 60 days money back badge">
+
+</center>
+
+</div>
+
+</div>
+
+
+
+<!--END OF MONEY MAKING MOGULS -->
+
+
+
+</div><!--CONTENT-->
+
+	</div>
+
+
+
+	
+
+
+
+	
+
+<br><br>
+
+<div class="footer" style="margin:auto; color:#b3b3b3;font-size:12px; text-align:center;display:block;">
+
+
+
+<center>
+
+	<img src="./img/logo.png" style="max-width:250px;"/>
+
+	<br/><br/>
+
+</center>
+
+
+
+<p style="color:#FFF;font-size:15px;line-height:20px;">ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark
+
+of Click Sales Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite
+
+410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not
+
+constitute an endorsement, approval or review of these products or any claim, statement or
+
+opinion used in promotion of these products.</p>
+
+
+
+<p class="footerlink">
+
+<a href="#">Order Now</a> |
+
+<a href="#">Contact Us</a> |
+
+<a href="#">Order Support</a> |
+
+<a href="#">Terms & Conitions</a> |
+
+<a href="#">Privacy Policy</a> |
+
+<a href="#">Affiliates</a> 
+
+</p>
+
+
+
+<hr>
+
+
+
+<div class="colleft">
+
+	<p>&copy; Midas Manifestation. All Rights Reserved.</p>
+
+</div>
+
+<div class="colright">
+
+	<p>support@MidasManifestation</p>
+
+</div>
+
+
+
+</div></div>
+
+
+
+
+<p><a data-toggle="modal" id="modal_link" href="#popupAccess"  style="display:none" class="link lightbox">modal</a></p>
+<!-- -- MODAL -- -->
+<div class="modal fade" id="popupAccess" role="dialog">
+    <div class="modal-dialog modal-fpmdlframe">
+    <div class="mdl-close"><button type="button" class="close" data-dismiss="modal">X</button></div>
+
+    <div class="modal-content content-mdl">
+            <div class="contenthdr">
+              <h1 class=" mdlBold mdlh1">Because of the times we're in, I'm going to make you an offer...</h1>
+            </div>
+            <div class="font-alt" style="text-align: center;font-size: 28px;padding: 10px 20px;">
+              <p class="mdlHd">Try Midas Manifestation for FREE if you join within the next 15 minutes!</p>
+              <p class="mdlHd">Hurry, we cannot offer this for much longer!</p>
+          </div>
+              <div class="font-alt mt-30">
+                  <a class="btn-mdl btn-rdMore" href="buy4.php">Claim My Spot</a>
+                  <p><center>$0 then 7 day one time rebill at $37</center></p>
+              </div>
+              <p><center><img src="img/mbg-gold.jpeg" alt="Add 60 days money back badge"></center></p>    
+            </div>
+          </div>
+            
+            </div>
+<!-- END OF SIGN-UP MODAL -->
+
+
+<script>
+var cctime=null; var waitTime=5; var ppel='#popupAccess'; var exit=false;
+$(function() {
+	cctime=new Date().getTime();
+   $(window).mousemove(function(event){
+	   if (((new Date().getTime() - cctime) > (waitTime * 1000)) && (event.clientY <10)) {
+		if (!$(ppel).is(':visible') ===  $(ppel).is(':hidden')) {
+			$('#modal_link').trigger('click');cctime=new Date().getTime();
+		}
+	}   
+    });  
+	$('.close').on('click', function(event) {
+     if ($(ppel).is(':visible') ===  !$(ppel).is(':hidden'))	cctime=new Date().getTime();
+ 	});
+ 		$('.exit').on('click', function(event) {
+     exit=true;
+ 	});
+});  
+ $('a').bind('click', function(e) {
+     exit=true;
+ });
+//  $(window).bind('beforeunload', function(e) {
+// 	 if (exit==false){
+//     var message = "**********************************\n\nWAIT BEFORE YOU GO!\n\n\nCLICK THE CANCEL BUTTON RIGHT NOW\nYou Will Want To SEE THIS! \nRead This Letter To Lose Weight Permanently Today!\n\n**CLICK CANCEL TO GET The Information You NEED.\n\n\n";
+//     e.returnValue = message;
+// 	 //setTimeout('window.location = "https://www.1minuteweightloss.com/long.php"', 10); 
+// 	 exit=true;
+// 	 }
+//     return message;
+// });  
+</script>
+
+
+ <script>
+
+		(function ( window, document, undefined ) {
+
+
+
+		/*
+
+		* Grab all iframes on the page or return
+
+		*/
+
+		var iframes = document.getElementsByTagName( 'iframe' );
+
+
+
+		/*
+
+		* Loop through the iframes array
+
+		*/
+
+		for ( var i = 0; i < iframes.length; i++ ) {
+
+
+
+		var iframe = iframes[i],
+
+
+
+		/*
+
+		* RegExp, extend this if you need more players
+
+		*/
+
+		players = /www.youtube.com|player.vimeo.com/;
+
+
+
+		/*
+
+		* If the RegExp pattern exists within the current iframe
+
+		*/
+
+		if ( iframe.src.search( players ) > 0 ) {
+
+
+
+		/*
+
+		* Calculate the video ratio based on the iframe's w/h dimensions
+
+		*/
+
+		var videoRatio    = ( iframe.height / iframe.width ) * 100;
+
+
+
+		/*
+
+		* Replace the iframe's dimensions and position
+
+		* the iframe absolute, this is the trick to emulate
+
+		* the video ratio
+
+		*/
+
+		iframe.style.position = 'absolute';
+
+		iframe.style.top   = '0';
+
+		iframe.style.left   = '0';
+
+		iframe.width     = '100%';
+
+		iframe.height     = '100%';
+
+
+
+		/*
+
+		* Wrap the iframe in a new <div> which uses a
+
+		* dynamically fetched padding-top property based
+
+		* on the video's w/h dimensions
+
+		*/
+
+		var wrap       = document.createElement( 'div' );
+
+		wrap.className    = 'fluid-vids';
+
+		wrap.style.width   = '100%';
+
+		wrap.style.position  = 'relative';
+
+		wrap.style.paddingTop = videoRatio + '%';
+
+
+
+		/*
+
+		* Add the iframe inside our newly created <div>
+
+		*/
+
+		var iframeParent   = iframe.parentNode;
+
+		iframeParent.insertBefore( wrap, iframe );
+
+		wrap.appendChild( iframe );
+
+
+
+		}
+
+
+
+		}
+
+
+
+		})
+
+		( window, document );
+
+</script>
+
+<!--yt -  JS -->
+
+	<script type="text/javascript" src="./js/floating.js"></script>
+
+<!--END -yt -->
+
+
+
+</body>
+<script type="text/javascript">
+// Special handling for in-app browsers that don't always support new windows
+(function() {
+    function browserSupportsNewWindows(userAgent) {
+        var rules = [
+            'FBIOS',
+            'Twitter for iPhone',
+            'WebView',
+            '(iPhone|iPod|iPad)(?!.*Safari\/)',
+            'Android.*(wv|\.0\.0\.0)'
+        ];
+        var pattern = new RegExp('(' + rules.join('|') + ')', 'ig');
+        return !pattern.test(userAgent);
+    }
+    if (!browserSupportsNewWindows(navigator.userAgent || navigator.vendor || window.opera)) {
+        document.getElementById('af-form-712047315').parentElement.removeAttribute('target');
+    }
+})();
+</script><script type="text/javascript">
+  
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-712047315")) {
+                document.getElementById("af-form-712047315").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-712047315")) {
+                document.getElementById("af-body-712047315").className = "af-body inline af-quirksMode";
+            }
+            if (document.getElementById("af-header-712047315")) {
+                document.getElementById("af-header-712047315").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-712047315")) {
+                document.getElementById("af-footer-712047315").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+ 
+</script>
+<!-- /AWeber Web Form Generator 3.0.1 -->
+<html>
+
